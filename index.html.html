@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasadd Bhiide — Senior Product Manager</title>
+<meta name="description" content="Senior Product Manager, B2B & B2C SaaS — 10+ years turning market problems into product strategy. 80% faster audit reviews, data-driven UX fixes, leaner build cycles.">
+
+<!-- Open Graph (LinkedIn, Facebook, Slack) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Prasadd Bhiide — Senior Product Manager">
+<meta property="og:description" content="B2B & B2C SaaS product leader — 80% faster audit reviews, data-driven UX fixes, leaner build cycles. 10+ years, 8+ end-to-end.">
+<meta property="og:url" content="https://prasaddbhiide.github.io">
+<meta property="og:site_name" content="Prasadd Bhiide — Portfolio">
+
+<!-- Twitter/X card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Prasadd Bhiide — Senior Product Manager">
+<meta name="twitter:description" content="B2B & B2C SaaS product leader — 80% faster audit reviews, data-driven UX fixes, leaner build cycles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0B1F2E;
+    --teal: #0E4C4A;
+    --teal-bright: #1B8C82;
+    --paper: #F6F7F5;
+    --paper-alt: #EEF1EE;
+    --ink: #101A1D;
+    --muted: #5B6B6C;
+    --line: rgba(16,26,29,0.12);
+    --line-soft: rgba(16,26,29,0.07);
+    --max: 1080px;
+    --radius: 3px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+
+  .display{
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.02em;
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--teal-bright);
+    outline-offset:3px;
+  }
+
+  /* ---------- NAV ---------- */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,247,245,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  header.site .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:64px;
+  }
+  .brand{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:1.05rem;
+    color:var(--navy);
+  }
+  .brand span{color:var(--teal-bright);}
+  nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+  }
+  nav.main-nav a{
+    font-size:0.88rem;
+    color:var(--muted);
+    text-decoration:none;
+    font-weight:500;
+    transition:color .2s ease;
+  }
+  nav.main-nav a:hover{color:var(--teal-bright);}
+  .nav-toggle{display:none;}
+
+  @media (max-width:720px){
+    nav.main-nav ul{
+      position:fixed; top:64px; left:0; right:0;
+      background:var(--paper);
+      flex-direction:column;
+      padding:8px 28px 20px;
+      border-bottom:1px solid var(--line-soft);
+      gap:16px;
+      display:none;
+    }
+    nav.main-nav ul.open{display:flex;}
+    .nav-toggle{
+      display:block;
+      background:none; border:none;
+      font-size:1.4rem; color:var(--navy); cursor:pointer;
+      line-height:1;
+    }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:96px 0 72px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .wrap{position:relative; z-index:2;}
+  .hero-tag{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.76rem;
+    color:var(--teal);
+    background:rgba(14,76,74,0.08);
+    border:1px solid rgba(14,76,74,0.18);
+    padding:5px 12px;
+    border-radius:100px;
+    margin-bottom:28px;
+    font-weight:500;
+  }
+  .hero-tag::before{
+    content:"";
+    width:6px; height:6px; border-radius:50%;
+    background:var(--teal-bright);
+    display:inline-block;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 5.2vw, 4.2rem);
+    font-weight:600;
+    line-height:1.04;
+    color:var(--navy);
+    max-width:14ch;
+  }
+  .hero .role{
+    margin-top:18px;
+    font-size:clamp(1.05rem, 2vw, 1.3rem);
+    color:var(--teal);
+    font-weight:500;
+    font-family:'Space Grotesk', sans-serif;
+  }
+  .hero .value-prop{
+    margin-top:22px;
+    max-width:56ch;
+    font-size:1.08rem;
+    color:var(--muted);
+  }
+  .hero .value-prop strong{color:var(--ink); font-weight:600;}
+
+  .hero-links{
+    margin-top:38px;
+    display:flex; flex-wrap:wrap; gap:14px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 20px;
+    border-radius:var(--radius);
+    font-size:0.9rem;
+    font-weight:500;
+    text-decoration:none;
+    border:1px solid var(--line);
+    transition:all .18s ease;
+  }
+  .btn-primary{
+    background:var(--navy);
+    color:#fff;
+    border-color:var(--navy);
+  }
+  .btn-primary:hover{background:var(--teal); border-color:var(--teal);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--ink);
+  }
+  .btn-ghost:hover{border-color:var(--teal-bright); color:var(--teal);}
+
+  /* signature: quiet ledger rule behind hero */
+  .hero-rule{
+    position:absolute; left:0; right:0; bottom:0;
+    height:1px;
+    background:linear-gradient(90deg, transparent, var(--line) 15%, var(--line) 85%, transparent);
+  }
+  .hero-marks{
+    position:absolute; top:0; right:-40px; bottom:0;
+    display:flex; flex-direction:column; justify-content:space-between;
+    padding:100px 0;
+    opacity:0.5;
+    z-index:1;
+  }
+  @media (max-width:900px){.hero-marks{display:none;}}
+  .hero-marks span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    color:var(--muted);
+    writing-mode:vertical-rl;
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:88px 0;}
+  .section-head{
+    margin-bottom:44px;
+    display:flex; align-items:baseline; gap:16px;
+  }
+  .section-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--teal-bright);
+  }
+  .section-head h2{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:clamp(1.5rem, 3vw, 2.1rem);
+    font-weight:600;
+    color:var(--navy);
+  }
+  .section-alt{background:var(--paper-alt);}
+
+  .reveal{
+    opacity:0; transform:translateY(18px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  @media (max-width:800px){.about-grid{grid-template-columns:1fr;}}
+  .about-grid p{color:var(--muted); margin-bottom:16px; max-width:60ch;}
+  .about-grid p strong{color:var(--ink); font-weight:600;}
+
+  .stat-list{
+    border-top:1px solid var(--line);
+  }
+  .stat{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+    gap:12px;
+  }
+  .stat .num{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:1.9rem;
+    font-weight:600;
+    color:var(--teal);
+    white-space:nowrap;
+  }
+  .stat .lbl{
+    font-size:0.86rem;
+    color:var(--muted);
+    text-align:right;
+  }
+
+  .markets{
+    margin-top:24px;
+    display:flex; flex-wrap:wrap; gap:8px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    padding:5px 10px;
+    border:1px solid var(--line);
+    border-radius:3px;
+    color:var(--muted);
+  }
+
+  /* ---------- CASE STUDIES ---------- */
+  .case-list{
+    display:flex; flex-direction:column;
+    border-top:1px solid var(--line);
+  }
+  .case-card{
+    border-bottom:1px solid var(--line);
+    padding:30px 0;
+  }
+  .case-card summary{
+    list-style:none;
+    cursor:pointer;
+    display:grid;
+    grid-template-columns:auto 1fr auto auto;
+    align-items:center;
+    gap:20px;
+  }
+  .case-card summary::-webkit-details-marker{display:none;}
+  .case-id{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    color:var(--teal-bright);
+    border:1px solid rgba(27,140,130,0.35);
+    background:rgba(27,140,130,0.07);
+    padding:4px 8px;
+    border-radius:3px;
+    white-space:nowrap;
+  }
+  .case-title-wrap h3{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--navy);
+  }
+  .case-title-wrap .case-sub{
+    font-size:0.85rem;
+    color:var(--muted);
+    margin-top:4px;
+  }
+  .case-metric{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:1.6rem;
+    color:var(--teal);
+    white-space:nowrap;
+  }
+  .case-chevron{
+    width:26px; height:26px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:0.85rem;
+    color:var(--muted);
+    transition:transform .25s ease;
+    flex-shrink:0;
+  }
+  details[open] .case-chevron{transform:rotate(45deg);}
+
+  @media (max-width:640px){
+    .case-card summary{grid-template-columns:1fr auto;}
+    .case-id{grid-column:1/2;}
+    .case-metric{grid-column:2/3; grid-row:1/2;}
+    .case-title-wrap{grid-column:1/3;}
+    .case-chevron{grid-column:2/3;}
+  }
+
+  .case-body{
+    margin-top:26px;
+    padding-top:26px;
+    border-top:1px dashed var(--line);
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+  }
+  @media (max-width:800px){.case-body{grid-template-columns:1fr;}}
+  .case-col .k{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    text-transform:uppercase;
+    color:var(--teal-bright);
+    margin-bottom:8px;
+    display:block;
+  }
+  .case-col p{color:var(--muted); font-size:0.94rem;}
+  .skill-tags{
+    margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px;
+  }
+  .skill-tags span{
+    font-size:0.72rem;
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--muted);
+    border:1px solid var(--line);
+    padding:3px 8px;
+    border-radius:3px;
+  }
+  .case-result-full{
+    grid-column:1/-1;
+    background:var(--paper-alt);
+    border:1px solid var(--line-soft);
+    border-radius:4px;
+    padding:16px 18px;
+    margin-top:4px;
+  }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{
+    position:relative;
+    padding-left:32px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute; left:5px; top:6px; bottom:6px;
+    width:1px;
+    background:var(--line);
+  }
+  .tl-item{
+    position:relative;
+    padding-bottom:38px;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:"";
+    position:absolute; left:-32px; top:6px;
+    width:11px; height:11px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--teal-bright);
+  }
+  .tl-item.current::before{background:var(--teal-bright);}
+  .tl-head{
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 16px;
+  }
+  .tl-role{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    color:var(--navy);
+    font-size:1.05rem;
+  }
+  .tl-org{color:var(--teal); font-weight:500; font-size:0.95rem;}
+  .tl-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    color:var(--muted);
+    margin-left:auto;
+  }
+  .tl-desc{color:var(--muted); margin-top:8px; font-size:0.93rem; max-width:62ch;}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .skill-cell{
+    background:var(--paper);
+    padding:20px;
+    display:flex; align-items:center; gap:12px;
+    font-size:0.92rem;
+    font-weight:500;
+    color:var(--ink);
+  }
+  .skill-cell::before{
+    content:"";
+    width:6px; height:6px;
+    background:var(--teal-bright);
+  }
+
+  /* ---------- CERTS ---------- */
+  .cert-list{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line);}
+  .cert-item{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:20px 0; border-bottom:1px solid var(--line);
+    gap:16px; flex-wrap:wrap;
+  }
+  .cert-name{font-weight:600; color:var(--navy); font-family:'Space Grotesk', sans-serif;}
+  .cert-issuer{color:var(--muted); font-size:0.88rem;}
+  .cert-year{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--teal-bright);
+    border:1px solid rgba(27,140,130,0.3);
+    padding:3px 10px;
+    border-radius:100px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--navy);
+    color:#E7ECEA;
+    padding:64px 0 32px;
+  }
+  .footer-grid{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px;
+    padding-bottom:36px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+  }
+  footer h3{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:1.4rem;
+    margin-bottom:10px;
+  }
+  footer .foot-sub{color:rgba(231,236,234,0.6); max-width:38ch; font-size:0.92rem;}
+  .foot-links{display:flex; flex-direction:column; gap:10px;}
+  .foot-links a{
+    color:#E7ECEA;
+    text-decoration:none;
+    font-size:0.92rem;
+    display:flex; align-items:center; gap:8px;
+    opacity:0.85;
+    transition:opacity .2s ease;
+  }
+  .foot-links a:hover{opacity:1; color:#57D6C9;}
+  .foot-bottom{
+    padding-top:24px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+    font-size:0.78rem;
+    color:rgba(231,236,234,0.45);
+    font-family:'IBM Plex Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="#top" class="brand">Prasadd Bhiide <span>·</span></a>
+    <nav class="main-nav">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul id="navList">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Case Studies</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="hero-tag">Open to Senior PM / Group PM roles</span>
+    <h1 class="display">Prasadd Bhiide</h1>
+    <div class="role">Senior Product Manager — B2B &amp; B2C SaaS</div>
+    <p class="value-prop">I turn complex market problems into product strategy — <strong>80% faster audit reviews</strong>, data-driven UX fixes, and leaner build cycles.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="https://linkedin.com/in/prasaddbhiide" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-ghost" href="https://prasadproductcrux.wordpress.com" target="_blank" rel="noopener">Read the blog ↗</a>
+      <a class="btn btn-ghost" href="mailto:prasaddbhiide@gmail.com">prasaddbhiide@gmail.com</a>
+    </div>
+  </div>
+  <div class="hero-marks"><span>AUDIT · ECOMMERCE · EDUCATION</span></div>
+  <div class="hero-rule"></div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num mono">01</span><h2>About</h2></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p><strong>10+ years</strong> in the software industry, including <strong>8+ years</strong> of end-to-end product ownership for B2B and B2C SaaS platforms spanning audit, eCommerce, and education domains — shipped for customers across the <strong>USA, Canada, EMEA, and APAC</strong>.</p>
+        <p>Deep, practical fluency in Agile and Scrum — running discovery, grooming, PI planning, and release cycles as the connective tissue between engineering, UX, and the business.</p>
+        <p>Leads the <strong>Pride network at Wolters Kluwer for the APAC region</strong>, building an inclusive space alongside the product work.</p>
+        <div class="markets">
+          <span class="chip">USA</span><span class="chip">CANADA</span><span class="chip">EMEA</span><span class="chip">APAC</span>
+        </div>
+      </div>
+      <div class="stat-list reveal">
+        <div class="stat"><span class="num display">10+</span><span class="lbl">years in product &amp; software</span></div>
+        <div class="stat"><span class="num display">8+</span><span class="lbl">years of end‑to‑end ownership</span></div>
+        <div class="stat"><span class="num display">80%</span><span class="lbl">reduction in audit review wait time</span></div>
+        <div class="stat"><span class="num display">60%</span><span class="lbl">of users affected by an issue only analytics revealed</span></div>
+        <div class="stat"><span class="num display">90%</span><span class="lbl">fewer in‑build design changes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section-alt">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num mono">02</span><h2>Case Studies</h2></div>
+
+    <div class="case-list">
+
+      <details class="case-card reveal">
+        <summary>
+          <span class="case-id">WK · AUDIT</span>
+          <span class="case-title-wrap">
+            <h3>Cutting audit review time by 80%</h3>
+            <span class="case-sub">Wolters Kluwer — Product Manager</span>
+          </span>
+          <span class="case-metric display">−80%</span>
+          <span class="case-chevron">+</span>
+        </summary>
+        <div class="case-body">
+          <div class="case-col">
+            <span class="k mono">Problem</span>
+            <p>Reviewers on the audit platform faced long wait times during the review process, slowing down a workflow customers depend on to close audits on schedule.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Approach</span>
+            <p>Led the design and delivery of customer-focused dashboard features, working closely with UX and engineering to prioritize the changes with the most direct impact on reviewer wait time.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Result</span>
+            <p>Delivered an 80% reduction in audit review wait time, directly improving reviewer throughput and customer satisfaction with the audit workflow.</p>
+          </div>
+          <div class="case-col" style="grid-column:1/-1;">
+            <span class="k mono">Skills used</span>
+            <div class="skill-tags">
+              <span>Customer discovery</span><span>Roadmap prioritization</span><span>Cross-functional delivery</span>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="case-card reveal">
+        <summary>
+          <span class="case-id">WK · ANALYTICS</span>
+          <span class="case-title-wrap">
+            <h3>Finding the hidden blind spot with Pendo</h3>
+            <span class="case-sub">Wolters Kluwer — Product Manager</span>
+          </span>
+          <span class="case-metric display">60%</span>
+          <span class="case-chevron">+</span>
+        </summary>
+        <div class="case-body">
+          <div class="case-col">
+            <span class="k mono">Problem</span>
+            <p>Support tickets weren't surfacing a friction point in the product — a gap between what customers reported and what they were actually struggling with.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Approach</span>
+            <p>Used Pendo product analytics to study real user behavior across the platform rather than relying on reported issues alone, tracing usage patterns back to a specific workflow.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Result</span>
+            <p>Uncovered that 60% of users were struggling to upload and manage attachments, and turned the finding into a prioritized fix on the roadmap.</p>
+          </div>
+          <div class="case-col" style="grid-column:1/-1;">
+            <span class="k mono">Skills used</span>
+            <div class="skill-tags">
+              <span>Product analytics</span><span>Data-driven prioritization</span><span>Quantitative UX research</span>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="case-card reveal">
+        <summary>
+          <span class="case-id">OB · PROCESS</span>
+          <span class="case-title-wrap">
+            <h3>Reducing design churn by 90% with low-fidelity testing</h3>
+            <span class="case-sub">Omni Bridge — Product Owner</span>
+          </span>
+          <span class="case-metric display">−90%</span>
+          <span class="case-chevron">+</span>
+        </summary>
+        <div class="case-body">
+          <div class="case-col">
+            <span class="k mono">Problem</span>
+            <p>UI designs were changing significantly mid-development, burning engineering time on rework that could have been caught earlier.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Approach</span>
+            <p>Introduced a practice of demoing low-fidelity mockups to end users before development began, catching misalignment while it was still cheap to fix.</p>
+          </div>
+          <div class="case-col">
+            <span class="k mono">Result</span>
+            <p>Cut UI design changes during development by 90%, protecting engineering time and shortening the path from idea to shipped feature.</p>
+          </div>
+          <div class="case-col" style="grid-column:1/-1;">
+            <span class="k mono">Skills used</span>
+            <div class="skill-tags">
+              <span>Rapid prototyping</span><span>Stakeholder alignment</span><span>Process design</span>
+            </div>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num mono">03</span><h2>Experience</h2></div>
+    <div class="timeline">
+
+      <div class="tl-item current reveal">
+        <div class="tl-head">
+          <span class="tl-role">Senior Product Owner</span>
+          <span class="tl-org">Wolters Kluwer</span>
+          <span class="tl-date mono">Dec 2023 — Present</span>
+        </div>
+        <p class="tl-desc">Owns the product roadmap and backlog, leading onshore and offshore teams as Agile Product Owner. Led the Vue2‑to‑Vue3 upgrade to improve audit UI responsiveness, runs customer discovery, and leads PI planning, grooming, and system demos.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <span class="tl-role">Tech Service &amp; Product Manager</span>
+          <span class="tl-org">UBS</span>
+          <span class="tl-date mono">Aug — Oct 2023</span>
+        </div>
+        <p class="tl-desc">Documented the impact of policy changes on existing products and maintained Minimum Enterprise Requirements (MER) documentation for new policies and releases.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <span class="tl-role">Product Manager</span>
+          <span class="tl-org">Wolters Kluwer</span>
+          <span class="tl-date mono">Apr 2021 — Jul 2023</span>
+        </div>
+        <p class="tl-desc">Reduced audit review wait time by 80% via customer-focused dashboard features, and used Pendo analytics to uncover and fix an attachment-management issue affecting 60% of users. Ran persona demos and maintained a market-aligned backlog.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <span class="tl-role">Product Owner</span>
+          <span class="tl-org">Omni Bridge</span>
+          <span class="tl-date mono">Feb 2020 — Apr 2021</span>
+        </div>
+        <p class="tl-desc">Cut in-build UI changes by 90% with low-fidelity mockup testing. Partnered with Pre-Sales on scope and competitor analysis, and led ideation sessions and Scrum ceremonies across multiple development teams.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <span class="tl-role">Product Owner</span>
+          <span class="tl-org">Infogen Lab Inc</span>
+          <span class="tl-date mono">Sep 2016 — Sep 2019</span>
+        </div>
+        <p class="tl-desc">Aligned business usage with product deliverables alongside the Lead Product Owner, and partnered with Customer Support to turn reported issues into a feature roadmap improving navigation, data visualization, and load time.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <span class="tl-role">QA Engineer</span>
+          <span class="tl-org">Veritas</span>
+          <span class="tl-date mono">Jan 2014 — Apr 2016</span>
+        </div>
+        <p class="tl-desc">Owned manual and automation testing — test case writing, execution, and defect reporting — and contributed to user story estimation and QA planning.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-alt">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num mono">04</span><h2>Skills</h2></div>
+    <div class="skills-grid reveal">
+      <div class="skill-cell">Product Strategy</div>
+      <div class="skill-cell">Roadmap Planning</div>
+      <div class="skill-cell">Stakeholder Management</div>
+      <div class="skill-cell">Go-to-Market Strategy</div>
+      <div class="skill-cell">Customer Discovery</div>
+      <div class="skill-cell">Agile / Scrum</div>
+      <div class="skill-cell">JIRA</div>
+      <div class="skill-cell">Pendo</div>
+      <div class="skill-cell">MIRO</div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head"><span class="section-num mono">05</span><h2>Certifications</h2></div>
+    <div class="cert-list reveal">
+      <div class="cert-item">
+        <div><div class="cert-name">SAFe Product Owner / Product Manager (SAFe POPM)</div><div class="cert-issuer">Scaled Agile, Inc.</div></div>
+        <span class="cert-year mono">2024</span>
+      </div>
+      <div class="cert-item">
+        <div><div class="cert-name">Advanced Certified Scrum Product Owner (A-CSPO)</div><div class="cert-issuer">Scrum Alliance</div></div>
+        <span class="cert-year mono">2023</span>
+      </div>
+      <div class="cert-item">
+        <div><div class="cert-name">Certified Scrum Product Owner (CSPO)</div><div class="cert-issuer">Scrum Alliance</div></div>
+        <span class="cert-year mono">2019</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3 class="display">Let's talk product.</h3>
+        <p class="foot-sub">Open to conversations about Senior PM and Group PM roles across B2B and B2C SaaS.</p>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:prasaddbhiide@gmail.com">✉ prasaddbhiide@gmail.com</a>
+        <a href="https://linkedin.com/in/prasaddbhiide" target="_blank" rel="noopener">↗ linkedin.com/in/prasaddbhiide</a>
+        <a href="https://prasadproductcrux.wordpress.com" target="_blank" rel="noopener">↗ prasadproductcrux.wordpress.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PRASADD BHIIDE</span>
+      <span>BUILT WITH FOCUS ON CLARITY</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const toggle = document.querySelector('.nav-toggle');
+  const navList = document.getElementById('navList');
+  if(toggle){
+    toggle.addEventListener('click', () => {
+      const open = navList.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navList.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.15});
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // only one case study open at a time
+  const details = document.querySelectorAll('.case-card');
+  details.forEach(d => {
+    d.addEventListener('toggle', () => {
+      if(d.open){
+        details.forEach(other => { if(other !== d) other.open = false; });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
